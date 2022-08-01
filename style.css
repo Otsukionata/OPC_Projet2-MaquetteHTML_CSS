@@ -93,10 +93,6 @@ a {
   background-size: 100% 100%;
 }
 
-a:active {
-  color: #0065fc;
-}
-
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Formulaire et filtres ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 main {
@@ -115,13 +111,13 @@ form {
   margin: 20px 0;
 }
 
-.pin {
+.icone-lieu {
   height: 98%;
   border-radius: 15px 0 0 15px;
   background-color: #f2f2f2;
 }
 
-.pin i {
+.icone-lieu i {
   font-size: 20px;
   padding: 15px 20px;
 }
@@ -197,7 +193,7 @@ input[type="search"]:hover {
   margin-left: 10px;
 }
 
-.info-results {
+.icone-info {
   display: flex;
   margin: 15px 50px 35px;
 }
@@ -231,7 +227,7 @@ input[type="search"]:hover {
   border-radius: 25px;
 }
 
-.heberg-cards {
+.conteneur-hebergements {
   display: flex;
   flex-wrap: wrap;
 }
