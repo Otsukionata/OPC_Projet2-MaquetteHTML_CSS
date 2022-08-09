@@ -5,6 +5,16 @@
   box-sizing: border-box;
 }
 
+:root {
+  --couleur-principale: #0065fc;
+  --couleur-secondaire: #deebff;
+  --couleur-tertiaire: #f2f2f2;
+  --ombre-activites: #d2d2d2;
+  --police-normale: 400;
+  --police-grasse: 700;
+  --arrondi-cartes: 25px;
+}
+
 body {
   font-family: "Raleway", sans-serif;
 }
@@ -27,19 +37,19 @@ img {
 }
 
 h1 {
-  font-weight: 700;
+  font-weight: var(--police-grasse);
   font-size: 22px;
   padding-bottom: 10px;
 }
 
 h2 {
-  font-weight: 400;
+  font-weight: var(--police-normale);
   font-size: 16px;
   padding-bottom: 10px;
 }
 
 h3 {
-  font-weight: 700;
+  font-weight: var(--police-grasse);
   font-size: 22px;
   padding-bottom: 8px;
 }
@@ -66,7 +76,7 @@ a {
 }
 
 #btn a:hover {
-  color: #0065fc;
+  color: var(--couleur-principale);
 }
 
 .btn-nav {
@@ -74,8 +84,8 @@ a {
   text-decoration: none;
   background: linear-gradient(
       to bottom,
-      #0065fc 0%,
-      #0065fc 2px,
+      var(--couleur-principale) 0%,
+      var(--couleur-principale) 2px,
       transparent 3px
     )
     no-repeat;
@@ -84,12 +94,12 @@ a {
 }
 
 .btn-nav:hover {
-  color: #0065fc;
+  color: var(--couleur-principale);
   background-size: 100% 100%;
 }
 
 .btn-nav a:active {
-  color: #0065fc;
+  color: var(--couleur-principale);
   background-size: 100% 100%;
 }
 
@@ -114,7 +124,7 @@ form {
 .icone-lieu {
   height: 98%;
   border-radius: 15px 0 0 15px;
-  background-color: #f2f2f2;
+  background-color: var(--couleur-tertiaire);
 }
 
 .icone-lieu i {
@@ -124,7 +134,7 @@ form {
 
 #mars {
   padding: 15px;
-  border: 3px solid #f2f2f2;
+  border: 3px solid var(--couleur-tertiaire);
   color: black;
   font-weight: 600;
   font-size: 16px;
@@ -151,7 +161,7 @@ input[type="search"]:hover {
   width: 70%;
   align-items: center;
   justify-content: space-between;
-  font-weight: 700;
+  font-weight: var(--police-grasse);
   font-size: 16px;
 }
 
@@ -161,8 +171,8 @@ input[type="search"]:hover {
   width: 50px;
   padding: 13px;
   text-align: center;
-  background-color: #deebff;
-  color: #0065fc;
+  background-color: var(--couleur-secondaire);
+  color: var(--couleur-principale);
   border-radius: 50%;
   margin-left: -2px;
 }
@@ -175,18 +185,18 @@ input[type="search"]:hover {
   align-items: center;
   padding: 0 15px 0 0;
   border-radius: 50px;
-  border: 3px solid #f2f2f2;
+  border: 3px solid var(--couleur-tertiaire);
   cursor: pointer;
   transition: all 0.5s ease;
-  background: linear-gradient(to left, white 50%, #deebff 50%);
+  background: linear-gradient(to left, white 50%, var(--couleur-secondaire) 50%);
   background-size: 200% 100%;
   background-position: right bottom;
 }
 
 .detail-filtre:hover {
   background-position: left bottom;
-  color: #0065fc;
-  border: #deebff 3px solid;
+  color: var(--couleur-principale);
+  border: var(--couleur-secondaire) 3px solid;
 }
 
 .detail-filtre p {
@@ -207,8 +217,8 @@ input[type="search"]:hover {
   border-radius: 50%;
   padding: 3px;
   font-size: 12px;
-  color: #0065fc;
-  border: 2px solid #f2f2f2;
+  color: var(--couleur-principale);
+  border: 2px solid var(--couleur-tertiaire);
   margin-right: 5px;
 }
 
@@ -223,8 +233,8 @@ input[type="search"]:hover {
   padding: 20px;
   margin: 0 0 0 30px;
   justify-content: space-around;
-  background-color: #f2f2f2;
-  border-radius: 25px;
+  background-color: var(--couleur-tertiaire);
+  border-radius: var(--arrondi-cartes);
 }
 
 .conteneur-hebergements {
@@ -239,17 +249,17 @@ input[type="search"]:hover {
   margin: 10px 15px;
   border: 5px solid white;
   background-color: white;
-  border-radius: 25px;
+  border-radius: var(--arrondi-cartes);
   box-shadow: 0px 5px 15px #b4b4b4;
   transition: all 0.5s ease;
 }
 
 .carte-hebergement a {
-  font-weight: 400;
+  font-weight: var(--police-normale);
 }
 
 .carte-hebergement:hover {
-  box-shadow: 0px 5px 15px #0065fc;
+  box-shadow: 0px 5px 15px var(--couleur-principale);
   transform: scale(1.05);
 }
 
@@ -269,15 +279,15 @@ input[type="search"]:hover {
 }
 
 .bleu {
-  color: #0065fc;
+  color: var(--couleur-principale);
 }
 
 .gris {
-  color: #f2f2f2;
+  color: var(--couleur-tertiaire);
 }
 
 .plus {
-  font-weight: 700;
+  font-weight: var(--police-grasse);
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Cartes populaires ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
@@ -291,8 +301,8 @@ input[type="search"]:hover {
   width: 30%;
   margin: 0 25px;
   height: 100%;
-  background-color: #f2f2f2;
-  border-radius: 25px;
+  background-color: var(--couleur-tertiaire);
+  border-radius: var(--arrondi-cartes);
 }
 
 .carte-pop {
@@ -302,8 +312,8 @@ input[type="search"]:hover {
   margin: 25px;
   border: 4px solid white;
   background-color: white;
-  border-radius: 25px;
-  box-shadow: 0px 5px 15px #d2d2d2;
+  border-radius: var(--arrondi-cartes);
+  box-shadow: 0px 5px 15px var(--ombre-activites);
   transition: all 0.5s ease;
 }
 
@@ -315,7 +325,7 @@ input[type="search"]:hover {
 }
 
 .carte-pop:hover {
-  box-shadow: 0px 5px 15px #0065fc;
+  box-shadow: 0px 5px 15px var(--couleur-principale);
   transform: scale(1.05);
 }
 
@@ -339,8 +349,8 @@ input[type="search"]:hover {
   height: 350px;
   width: 25%;
   background-color: white;
-  border-radius: 25px;
-  box-shadow: 0px 2px 15px #d2d2d2;
+  border-radius: var(--arrondi-cartes);
+  box-shadow: 0px 2px 15px var(--ombre-activites);
   transition: all 0.5s ease;
 }
 
@@ -353,11 +363,11 @@ input[type="search"]:hover {
 
 .carte-GrandeImg p {
   padding: 10px 15px;
-  font-weight: 700;
+  font-weight: var(--police-grasse);
 }
 
 .carte-GrandeImg:hover {
-  box-shadow: 0px 15px 15px #deebff;
+  box-shadow: 0px 15px 15px var(--couleur-secondaire);
   transform: scale(1.02);
 }
 
@@ -372,8 +382,8 @@ input[type="search"]:hover {
   height: 51%;
   width: 100%;
   background-color: white;
-  border-radius: 25px;
-  box-shadow: 0px 2px 15px #d2d2d2;
+  border-radius: var(--arrondi-cartes);
+  box-shadow: 0px 2px 15px var(--ombre-activites);
   transition: all 0.5s ease;
 }
 
@@ -386,11 +396,11 @@ input[type="search"]:hover {
 
 .carte-ImgMoyenne p {
   padding: 8px 15px;
-  font-weight: 700;
+  font-weight: var(--police-grasse);
 }
 
 .carte-ImgMoyenne:hover {
-  box-shadow: 0px 15px 15px #deebff;
+  box-shadow: 0px 15px 15px var(--couleur-secondaire);
   transform: scale(1.02);
 }
 
@@ -398,8 +408,8 @@ input[type="search"]:hover {
   height: 40%;
   width: 100%;
   background-color: white;
-  border-radius: 25px;
-  box-shadow: 0px 2px 15px #d2d2d2;
+  border-radius: var(--arrondi-cartes);
+  box-shadow: 0px 2px 15px var(--ombre-activites);
   transition: all 0.5s ease;
 }
 
@@ -411,20 +421,20 @@ input[type="search"]:hover {
 }
 
 .carte-PetiteImg:hover {
-  box-shadow: 0px 15px 15px #deebff;
+  box-shadow: 0px 15px 15px var(--couleur-secondaire);
   transform: scale(1.02);
 }
 
 .carte-PetiteImg p {
   padding: 8px 15px;
-  font-weight: 700;
+  font-weight: var(--police-grasse);
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Footer ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 #pied {
   display: flex;
   padding: 30px 50px;
-  background-color: #f2f2f2;
+  background-color: var(--couleur-tertiaire);
   margin: 0;
   justify-content: space-between;
 }
