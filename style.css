@@ -13,6 +13,8 @@
   --police-normale: 400;
   --police-grasse: 700;
   --arrondi-cartes: 25px;
+  --titres-grands: 22px;
+  --titres-moyens: 16px;
 }
 
 body {
@@ -38,19 +40,19 @@ img {
 
 h1 {
   font-weight: var(--police-grasse);
-  font-size: 22px;
+  font-size: var(--titres-grands);
   padding-bottom: 10px;
 }
 
 h2 {
   font-weight: var(--police-normale);
-  font-size: 16px;
+  font-size: var(--titres-moyens);
   padding-bottom: 10px;
 }
 
 h3 {
   font-weight: var(--police-grasse);
-  font-size: 22px;
+  font-size: var(--titres-grands);
   padding-bottom: 8px;
 }
 
@@ -137,7 +139,7 @@ form {
   border: 3px solid var(--couleur-tertiaire);
   color: black;
   font-weight: 600;
-  font-size: 16px;
+  font-size: var(--titres-moyens);
 }
 
 input[type="search"]:focus {
@@ -162,11 +164,11 @@ input[type="search"]:hover {
   align-items: center;
   justify-content: space-between;
   font-weight: var(--police-grasse);
-  font-size: 16px;
+  font-size: var(--titres-moyens);
 }
 
 #filtres .fa-solid {
-  font-size: 22px;
+  font-size: var(--titres-grands);
   height: 50px;
   width: 50px;
   padding: 13px;
