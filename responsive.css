@@ -11,8 +11,8 @@
   .rechercher {
     height: 100%;
     text-align: center;
-    background-color: #0065fc;
-    color: white;
+    background-color: var(--couleur-principale);
+    color: var(--blanc);
     font-weight: 600;
     font-size: 16px;
     border-radius: 0 25px 25px 0;
@@ -37,8 +37,8 @@
   .rechercher {
     height: 100%;
     text-align: center;
-    background-color: #0065fc;
-    color: white;
+    background-color: var(--couleur-principale);
+    color: var(--blanc);
     font-weight: 600;
     font-size: 16px;
     border-radius: 0 25px 25px 0;
@@ -94,12 +94,12 @@
 
   .carte-GrandeImg .gdTxt {
     padding: 1px 15px;
-    font-weight: 700;
+    font-weight: var(--police-grasse);
   }
 
   .carte-PetiteImg .gdTxt {
     padding: 1px 15px;
-    font-weight: 700;
+    font-weight: var(--police-grasse);
   }
 }
 
@@ -121,15 +121,15 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    border-bottom: 3px solid #f2f2f2;
+    border-bottom: 3px solid var(--couleur-tertiaire);
   }
 
   .btn-nav {
     text-decoration: none;
     background: linear-gradient(
         to top,
-        #0065fc 0%,
-        #0065fc 2px,
+        var(--couleur-principale) 0%,
+        var(--couleur-principale) 2px,
         transparent 3px
       )
       no-repeat;
@@ -138,13 +138,13 @@
   }
 
   .btn-nav:hover {
-    color: #0065fc;
+    color: var(--couleur-principale);
     background-size: 100% 100%;
     border-bottom: 0px;
   }
 
   .btn-nav:active {
-    color: #0065fc;
+    color: var(--couleur-principale);
     background-size: 100% 100%;
     border-bottom: 0px;
   }
@@ -173,8 +173,8 @@
     right: 0;
     height: 100%;
     text-align: center;
-    background-color: #0065fc;
-    color: white;
+    background-color: var(--couleur-principale);
+    color: var(--blanc);
     font-weight: 600;
     font-size: 18px;
     border-radius: 20px;
@@ -213,7 +213,7 @@
   #hebergements {
     width: 100%;
     margin: auto;
-    background-color: white;
+    background-color: var(--blanc);
   }
 
   .carte-hebergement {
@@ -222,9 +222,9 @@
     height: 225px;
     margin: 10px;
     border: none;
-    background-color: white;
-    border: 5px solid white;
-    border-radius: 25px;
+    background-color: var(--blanc);
+    border: 5px solid var(--blanc);
+    border-radius: var(--arrondi-cartes);
     box-shadow: 0px 5px 15px #b4b4b4;
   }
 
@@ -245,9 +245,9 @@
   .carte-PetiteImg {
     width: 100%;
     height: 200px;
-    background-color: white;
-    border-radius: 25px;
-    box-shadow: 0px 2px 15px #d2d2d2;
+    background-color: var(--blanc);
+    border-radius: var(--arrondi-cartes);
+    box-shadow: 0px 2px 15px var(--ombre-activites);
   }
 
   .carte-GrandeImg img {
@@ -270,19 +270,19 @@
 
   .cartes-activites p {
     padding: 4px 15px;
-    font-weight: 700;
+    font-weight: var(--police-grasse);
   }
 
   .carte-PetiteImg p {
     padding: 4px 15px;
-    font-weight: 700;
+    font-weight: var(--police-grasse);
   }
 
   /* ===== Footer ===== */
   #pied {
     display: block;
     padding: 0px 20px;
-    background-color: #f2f2f2;
+    background-color: var(--couleur-tertiaire);
   }
 
   #pied ul {
